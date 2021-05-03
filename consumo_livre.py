@@ -17,7 +17,7 @@ dados_2016=[]
 dados_2017=[]
 dados_2018=[]
 regioes=[]
-colors=['#183446','#046E8F','#38AECC','#69C1D6','#A9E0ED'] # Atribuição das cores
+colors=['#07325a','#135090','#2178bb','#6ca1cf','#91b0d8'] # Atribuição das cores
 
 # Filtragem de dados em listas usando o laço for
 for dado in dados:
@@ -56,7 +56,7 @@ print (values)'''
 consumo_livre =go.Figure(go.Sunburst(labels=labels,parents=parents,values=values))
 consumo_livre.update_traces(hoverinfo="label+value+percent parent") # Informações do hover
 consumo_livre.update_layout(title=dict(    #"dict()"Função que atribui uma série de caracteristicas a variável(dicionário)
-    text='Consumo Livre Por Região GWh 2012-2018',
+    text='<b>Consumo Livre por Região 2012-2018 [GWh]<b>',
     font=dict(size=20),
     xref='paper', # Área central do gráfico
     yref='container', # Área externa ao paper
